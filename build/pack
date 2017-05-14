@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+const packager = require('electron-packager')
+const path = require('path')
+const pkg = require('../package')
+
+// https://github.com/electron-userland/electron-packager/blob/master/docs/api.md
+packager({
+  dir: path.join(__dirname, '..'),
+  appCopyright: '© 2017, kenny wang',
+  asar: true,
+  overwrite: true,
+  electronVersion: pkg.electronVersion,
+  icon: path.join(__dirname, '..', 'icns', 'icon'),
+  out: path.join(__dirname, '..', 'out'),
+  ignore:true,
+  platform: 'mas',
+  appBundleId: `wang.kenny.${pkg.name}`,
+  appCategoryType: 'public.app-category.developer-tools',
+  osxSign: {
+    type: process.env.NODE_ENV === 'production' ? 'distribution' : 'development',
+    entitlements: path.join(__dirname, '..', 'parent.plist'),
+    'entitlements-inherit': path.join(__dirname, '..', 'child.plist')
+  }
+},function (err, res) {
+  if (err) {
+    console.log(err)
+    process.exit(0);
+    return ;
+    // throw err;
+  }
+
+  const app = path.join(res[0], `${pkg.productName}.app`)
+})

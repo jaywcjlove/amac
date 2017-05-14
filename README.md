@@ -1,6 +1,7 @@
-# Awesome Mac App
 
-[![](./icns/logo.svg)](https://github.com/jaywcjlove/amac)
+[![](./icns/logo.png)](https://github.com/jaywcjlove/amac)
+
+---
 
 ## Screenshots
 

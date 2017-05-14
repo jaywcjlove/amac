@@ -1,8 +1,6 @@
 
 [![](./icns/logo.png)](https://github.com/jaywcjlove/amac)
 
----
-
 ## Screenshots
 
 ![](./icns/app.png)

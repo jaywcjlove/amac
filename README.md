@@ -3,12 +3,9 @@
 
 <p align="center"><a href='https://github.com/jaywcjlove/amac'><img alt="reactide" src="./icns/app.png"></a></p>
 
-
 ## Development
 
-To develop, run the self-reloading build:
-
-Get the code
+To develop, run the self-reloading build, Get the code:
 
 ```bash
 $ git clone https://github.com/jaywcjlove/amac.git

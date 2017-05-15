@@ -1,4 +1,5 @@
-import React,{Component} from 'react';
+import React,{Component} from 'react'
+import {Icons} from './icon'
 
 export default class Menu extends Component {
   static defaultProps = {
@@ -16,10 +17,16 @@ export default class Menu extends Component {
   renderListItem(source,onClick){
     let elms = [];
     for(let i in source){
-      elms.push(<li style={i==this.state.selector?styles.active:styles.cancel} key={i} onClick={()=>{
-        this.setState({selector:i});
-        onClick&&onClick(i,source[i])
-      }}>{source[i].title}</li>)
+
+      elms.push(
+        <li style={i==this.state.selector?styles.active:styles.cancel} key={i} onClick={()=>{
+          this.setState({selector:i});
+          onClick&&onClick(i,source[i])
+        }}>
+          <i><Icons type={i}/></i>
+          {source[i].title}
+        </li>
+      )
     }
     return elms
   }

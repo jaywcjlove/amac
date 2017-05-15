@@ -1,6 +1,7 @@
 import React,{Component} from 'react'
 import menuSource from "../data/"
 import Menu from "./menu"
+import Filter from "./filter"
 
 
 export default class Root extends Component{
@@ -21,13 +22,12 @@ export default class Root extends Component{
               }else{
                 source = [];
               }
-              console.log("--->",e,"---2>",key)
               this.setState({contentSource:source})
            }} /> 
         </div>
         <div className="content">
           <header className="header">
-          header menu
+            <Filter />
           </header>
 
           <div className="article-content">

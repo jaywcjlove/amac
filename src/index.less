@@ -40,6 +40,7 @@ li,ul{
     flex-direction:column;
     .header{
       height: 43px;
+      overflow: hidden;
       -webkit-app-region: drag;
       user-select: none;
       background-image: linear-gradient(-180deg, #E8E6E8 0%, #D6D4D6 98%);
@@ -73,6 +74,21 @@ li,ul{
     }
     i{
       padding: 0 5px 0 0;
+      vertical-align: middle;
+      display: inline-block;
+      position: relative;
+      top: -1px;
+    }
+  }
+}
+
+.menu-filter{
+  padding: 0 0 0 7px;
+  li{
+    display: inline-block;
+    margin: 12px 5px;
+    &:hover{
+      background-color:rgba(255, 255, 255, 0.11)
     }
   }
 }

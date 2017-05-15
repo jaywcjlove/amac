@@ -1,9 +1,7 @@
 
-[![](./icns/logo.png)](https://github.com/jaywcjlove/amac)
+<p align="center">[![](./icns/logo.png)](https://github.com/jaywcjlove/amac)</p>
 
-## Screenshots
-
-![](./icns/app.png)
+<p align="center">![](./icns/app.png)</p>
 
 ## Development
 

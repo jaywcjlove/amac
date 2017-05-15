@@ -8,7 +8,7 @@
     "build": "NODE_ENV=production webpack -p --config build/webpack.prod.js",
     "app:dev": "NODE_ENV=dev electron .",
     "app": "electron .",
-    "out": ""
+    "package": "./build/pack"
   },
   "repository": {
     "type": "git",

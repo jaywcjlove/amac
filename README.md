@@ -1,6 +1,8 @@
 
 <p align="center"><a href='https://github.com/jaywcjlove/amac'><img alt="reactide" height="134" src="./icns/logo.png"></a></p>
 
+[Awesome Mac](https://github.com/jaywcjlove/awesome-mac)  is the data repository for this application, which generates the data that APP intended. APP get the data, will find what recently updated content. There are more convenient filters to find applications.This is a cool plan.
+
 <p align="center"><a href='https://github.com/jaywcjlove/amac'><img alt="reactide" src="./icns/app.png"></a></p>
 
 ## Development

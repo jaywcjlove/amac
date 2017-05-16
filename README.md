@@ -1,5 +1,5 @@
 
-<p align="center"><a href='https://github.com/jaywcjlove/amac'><img alt="reactide" src="./icns/logo.png"></a></p>
+<p align="center"><a href='https://github.com/jaywcjlove/amac'><img alt="reactide" height="134" src="./icns/logo.png"></a></p>
 
 <p align="center"><a href='https://github.com/jaywcjlove/amac'><img alt="reactide" src="./icns/app.png"></a></p>
 

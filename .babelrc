@@ -1,10 +1,15 @@
 {
-  "presets": ["react-native"],
+  "presets": [
+    "react-native"
+  ],
   "plugins": [
-    ["module-resolver", {
-      "alias": {
-        "react-native": "react-native-macos",
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "react-native": "react-native-macos"
+        }
       }
-    }]
+    ]
   ]
 }

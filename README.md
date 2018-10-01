@@ -7,7 +7,9 @@
 
 ## Development
 
-Build macOS desktop applications using [React Native](https://github.com/ptmt/react-native-macos). To develop, run the build, Get the code:
+Node 9.x+, OS X 10.14+ required.
+
+Build macOS desktop applications using [react-native-macos](https://github.com/ptmt/react-native-macos). To develop, run the build, Get the code:
 
 ```bash
 $ git clone https://github.com/jaywcjlove/amac.git

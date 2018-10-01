@@ -1,13 +1,13 @@
 
 <p align="center"><a href='https://github.com/jaywcjlove/amac'><img alt="reactide" height="134" src="assets/logo.png"></a></p>
 
-[Awesome Mac](https://github.com/jaywcjlove/awesome-mac)  is the data repository for this application, which generates the data that APP intended. APP get the data, will find what recently updated content. There are more convenient filters to find applications.This is a cool plan.
+[Awesome Mac](https://github.com/jaywcjlove/awesome-mac) is the data repository for this application, which generates the data that APP intended. APP get the data, will find what recently updated content. There are more convenient filters to find applications. This is a cool plan.
 
 <p align="center"><a href='https://github.com/jaywcjlove/amac'><img alt="reactide" src="assets/app.png"></a></p>
 
 ## Development
 
-To develop, run the self-reloading build, Get the code:
+Build macOS desktop applications using [React Native](https://github.com/ptmt/react-native-macos). To develop, run the build, Get the code:
 
 ```bash
 $ git clone https://github.com/jaywcjlove/amac.git

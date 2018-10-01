@@ -1,55 +1,29 @@
 {
   "name": "amac",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main/main.js",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "dev": "NODE_ENV=dev webpack-dev-server --config build/webpack.dev.js --hot",
-    "build": "NODE_ENV=production webpack -p --config build/webpack.prod.js",
-    "app:dev": "NODE_ENV=dev electron .",
-    "app": "electron .",
-    "package": "./build/pack"
+    "start": "node node_modules/react-native-macos/local-cli/cli.js start",
+    "ios": "react-native run-ios",
+    "android": "react-native run-android",
+    "macos": "react-native-macos run-macos",
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jaywcjlove/amac.git"
-  },
-  "keywords": [
-    "awesome",
-    "awesome-mac",
-    "mac",
-    "macosx",
-    "osx"
-  ],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jaywcjlove/amac/issues"
-  },
-  "homepage": "https://github.com/jaywcjlove/amac#readme",
   "dependencies": {
-    "css-loader": "^0.28.1",
-    "electron-packager": "^8.7.0",
-    "extract-text-webpack-plugin": "^2.1.0",
-    "file-loader": "^0.11.1",
-    "json-loader": "^0.5.4",
-    "less": "^2.7.2",
-    "less-loader": "^4.0.3",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "style-loader": "^0.17.0"
+    "@rematch/core": "1.0.2",
+    "babel-plugin-module-resolver": "3.1.1",
+    "react": "16.2.0",
+    "react-native-macos": "0.18.1",
+    "react-redux": "5.0.7",
+    "react-router-native": "4.3.0"
   },
   "devDependencies": {
-    "babel-preset-stage-0": "^6.24.1",
-    "babel-core": "^6.24.1",
-    "babel-loader": "^7.0.0",
-    "babel-polyfill": "^6.23.0",
-    "babel-preset-latest": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "electron": "^1.6.7",
-    "merge-array-object": "^1.0.5",
-    "react-hot-loader": "3.0.0-beta.7",
-    "webpack": "^2.5.1",
-    "webpack-dev-server": "^2.4.5"
+    "babel-jest": "23.6.0",
+    "babel-preset-react-native": "4.0.1",
+    "jest": "23.6.0",
+    "react-test-renderer": "16.2.0"
+  },
+  "jest": {
+    "preset": "react-native-macos"
   }
 }

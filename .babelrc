@@ -1,16 +1,10 @@
 {
-  "presets": [
-    [
-      "latest", {
-        "es2015": {
-          "modules": false
-        }
-      }
-    ],
-    "react",
-    "stage-0"
-  ],
+  "presets": ["react-native"],
   "plugins": [
-    "react-hot-loader/babel"
+    ["module-resolver", {
+      "alias": {
+        "react-native": "react-native-macos",
+      }
+    }]
   ]
 }

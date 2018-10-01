@@ -7,22 +7,13 @@ class Home extends Component {
   static defaultProps = {
     contentSource: [],
   }
-  // 初始化模拟数据
-  constructor(props) {
-    super(props);
-    this.state = {
-      dataSource: []
-    };
-  }
   renderRow(rowData) {
     return (
       <View style={styles.list}>
         <View style={{ flex: 1 }}>
           <TouchableOpacity
             style={{ paddingBottom: 5 }}
-            onPress={() => {
-              Linking.openURL(rowData.url);
-            }}
+            onPress={() => Linking.openURL(rowData.url)}
           >
             <Text style={{ color: "#0074FD" }}>{rowData.title}</Text>
           </TouchableOpacity>

@@ -19,6 +19,7 @@ class BasicLayout extends Component<Props> {
       const menuKeys = Object.keys(menuSource.data);
       if (menuKeys && menuKeys[0]) {
         this.props.updateState({
+          title: menuSource.data[menuKeys[0]].title,
           selector: menuKeys[0],
           listSource: menuSource.data[menuKeys[0]].data,
         });
@@ -49,7 +50,11 @@ class BasicLayout extends Component<Props> {
               } else {
                 source = [];
               }
-              this.props.updateListSource(source);
+              this.props.updateState({
+                title: menuSource.data[key].title,
+                selector: key,
+                listSource: source,
+              });
             }}
           /> 
         </View>

@@ -5,6 +5,7 @@ export const global = {
   state: {
     test: 1,
     menuSource,
+    title: '', // title
     selector: '', // menu selector key
     listSource: []
   },

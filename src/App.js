@@ -24,7 +24,6 @@ const store = init({
   models
 });
 
-
 type Props = {};
 
 export default class App extends Component<Props> {
@@ -56,7 +55,6 @@ export default class App extends Component<Props> {
   }
 }
 
-
 const RoutersContainer = withRouter(({ history: historyData, location }) => {
   const routerData = getRouterData();
   const BasicLayout = routerData['/'].component;
@@ -65,9 +63,6 @@ const RoutersContainer = withRouter(({ history: historyData, location }) => {
     location,
     history: historyData,
   };
-  // const UserLayoutView = UserLayout()
-  // console.log('UserLayout:', UserLayoutView)
-  // <Route path="/user" render={props => <UserLayout key="user" {...props} {...resetProps} />} />
 
   return (
     <View style={styles.container}>
@@ -78,9 +73,8 @@ const RoutersContainer = withRouter(({ history: historyData, location }) => {
   );
 });
 
-
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 1
   },
 });

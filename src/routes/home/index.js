@@ -28,14 +28,15 @@ class Home extends Component {
   }
   render() {
     const ds = new ListView.DataSource({
-      rowHasChanged: (r1, r2) => {
-        return r1 !== r2;
-      }
+      rowHasChanged: (r1, r2) => r1 !== r2
     });
     let dataSource = ds.cloneWithRows(this.props.listSource);
-
+    console.log('this.props', this.props)
     return (
       <View style={styles.container}>
+        <View style={styles.header}>
+          <Text>{this.props.title}</Text>
+        </View>
         <ListView
           dataSource={dataSource}
           enableEmptySections={true}
@@ -49,7 +50,13 @@ class Home extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 38
+  },
+  header: {
+    height: 32,
+    paddingHorizontal: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#F8F7F5',
   },
   list: {
     flex: 1,
@@ -66,7 +73,8 @@ const styles = StyleSheet.create({
 
 
 const mapState = ({ global }) => ({
-  listSource: global.listSource
+  listSource: global.listSource,
+  title: global.title,
 });
 
 const mapDispatch = ({ }) => ({});

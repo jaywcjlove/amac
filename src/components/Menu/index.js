@@ -61,7 +61,7 @@ export default class Menu extends Component {
 var styles = StyleSheet.create({
   listContainer: {
     flex: 1,
-    paddingTop: 20
+    paddingTop: 12
   },
   active: {
     backgroundColor: "rgba(255, 255, 255, 0.11)"

@@ -42,7 +42,7 @@ export default class App extends Component<Props> {
         key: 'a',
         callback: () => Linking.openURL('https://github.com/jaywcjlove/awesome-mac'),
       }
-    ])
+    ]);
   }
   render() {
     return (

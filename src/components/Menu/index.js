@@ -4,8 +4,8 @@ const { View, Text, StyleSheet, TouchableOpacity, ScrollView } = ReactNative;
 
 class ListView extends React.Component {
   render() {
-    var componentRow = []
-    for (var a in this.props.dataSource) {
+    const componentRow = []
+    for (const a in this.props.dataSource) {
       componentRow.push(this.props.renderRow(a, this.props.dataSource[a]))
     }
     return (

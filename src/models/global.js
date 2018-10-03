@@ -1,20 +1,20 @@
 import menuSource from '../data/data';
-console.log('menuSource:', menuSource)
 
 export const global = {
   state: {
     test: 1,
     menuSource,
     title: '', // title
+    details: '',
     selector: '', // menu selector key
-    listSource: []
+    contentSource: [],
   },
   reducers: {
     updateState: (state, payload) => ({ ...state, ...payload }),
   },
   effects: {
     async updateListSource(data) {
-      this.updateState({ listSource: data });
+      this.updateState({ contentSource: data });
     },
   },
 };

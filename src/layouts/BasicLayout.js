@@ -14,14 +14,15 @@ const Props = {
 
 class BasicLayout extends Component<Props> {
   componentDidMount() {
-    const { listSource, menuSource } = this.props;
-    if (listSource && listSource.length === 0 && menuSource.data) {
+    const { contentSource, menuSource } = this.props;
+    if (contentSource && contentSource.length === 0 && menuSource.data) {
       const menuKeys = Object.keys(menuSource.data);
       if (menuKeys && menuKeys[0]) {
         this.props.updateState({
           title: menuSource.data[menuKeys[0]].title,
           selector: menuKeys[0],
-          listSource: menuSource.data[menuKeys[0]].data,
+          details: menuSource.data[menuKeys[0]].des,
+          contentSource: menuSource.data[menuKeys[0]].items,
         });
       }
     }
@@ -44,17 +45,14 @@ class BasicLayout extends Component<Props> {
             selector={this.props.selector}
             dataSource={menuSource.data}
             onPress={(e, key) => {
-              let source = [];
-              if (key && menuSource.data && menuSource.data[key] && menuSource.data[key].data) {
-                source = menuSource.data[key].data;
-              } else {
-                source = [];
+              if (menuSource.data && menuSource.data.length > 0 && menuSource.data[key]) {
+                this.props.updateState({
+                  title: menuSource.data[key].title,
+                  selector: menuSource.data[key].key,
+                  details: menuSource.data[key].des,
+                  contentSource: menuSource.data[key].items,
+                });
               }
-              this.props.updateState({
-                title: menuSource.data[key].title,
-                selector: key,
-                listSource: source,
-              });
             }}
           /> 
         </View>
@@ -85,7 +83,7 @@ const styles = StyleSheet.create({
 
 const mapState = ({ global }) => ({
   selector: global.selector,
-  listSource: global.listSource,
+  contentSource: global.contentSource,
   menuSource: global.menuSource,
 });
 

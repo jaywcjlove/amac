@@ -5,6 +5,12 @@
 
 <p align="center"><a href='https://github.com/jaywcjlove/amac'><img alt="reactide" src="assets/app.png"></a></p>
 
+## Download
+
+Installers for the latest stable build for Mac can be [downloaded here](https://github.com/jaywcjlove/amac/releases).
+
+[![Get it on macOS](http://jaywcjlove.github.io/sb/download/macos.svg)](https://github.com/jaywcjlove/amac/releases)
+
 ## Development
 
 Node 9.x+, OS X 10.14+ required.

@@ -67,7 +67,7 @@ class Home extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.header}>
-          <Text>{this.props.title}</Text>
+          <Text style={{ color: '#333' }}>{this.props.title}</Text>
           <ButtonGroup
             dataSource={[
               {
